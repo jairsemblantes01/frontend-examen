@@ -319,7 +319,7 @@ export default {
           nameFile: this.fileList[0].name,
           b64: await this.filetob64(this.fileList[0])
         }
-        this.ecgData = await this.$axios.$post('/api/ecg', data)
+        this.ecgData = await this.$axios.$post('/api/ecg/', data)
       } catch (err) {
         const message = err.response ? err.response.data && err.response.data.message : err.message
         this.$error({

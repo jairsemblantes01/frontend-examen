@@ -1,5 +1,5 @@
 const BACKEND = process.env.BACKEND || 'http://127.0.0.1:8000'
-const PORT = process.env.PORT || 3009
+const PORT = process.env.PORT || 3000
 
 
 export default {
@@ -35,6 +35,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/ant',
+    { src: '@/plugins/axios.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -56,7 +57,7 @@ export default {
     '/api/': {
       target: BACKEND,
       pathRewrite: { '^/api/': '' },
-      changeOrigin: true
+      changeOrigin: false
     }
   },
 
