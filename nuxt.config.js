@@ -1,4 +1,6 @@
-const BACKEND = process.env.BACKEND || 'http://127.0.0.1:8000'
+const BACKEND = process.env.BACKEND || 'http://127.0.0.1:8000'}
+const PORT = process.env.PORT || 3009
+
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -18,7 +20,7 @@ export default {
     ],
   },
   server: {
-    port: 3009,
+    port: PORT,
     host: '0.0.0.0'
   },
 
