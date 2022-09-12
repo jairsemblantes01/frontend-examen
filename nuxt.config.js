@@ -1,4 +1,4 @@
-const BACKEND = process.env.BACKEND || 'http://127.0.0.1:8000'}
+const BACKEND = process.env.BACKEND || 'http://127.0.0.1:8000'
 const PORT = process.env.PORT || 3009
 
 
